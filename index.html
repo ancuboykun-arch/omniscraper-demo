@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniScraper — Official Live Demo & Interactive Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --accent: #10b981;
+      --accent-hover: #059669;
+      --dark: #0f172a;
+      --dark-card: #1e293b;
+      --border: #334155;
+      --text-muted: #94a3b8;
+      --text: #f8fafc;
+      --shopee: #ee4d2d;
+      --tokopedia: #03ac0e;
+      --amazon: #ff9900;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0f19;
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Top Banner Bar */
+    .top-bar {
+      background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+
+    .top-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .badge-live {
+      background: #10b981;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge-live::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    .btn-buy-header {
+      background: #fbbf24;
+      color: #000;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-buy-header:hover {
+      background: #f59e0b;
+      transform: translateY(-1px);
+    }
+
+    /* Header Nav */
+    header {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 24px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(37,99,235,0.3);
+    }
+
+    .brand-text h1 {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-text p {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .nav-tabs {
+      display: flex;
+      background: #1e293b;
+      padding: 4px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .nav-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+
+    .nav-btn.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1240px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Preview Section */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid { grid-template-columns: 1fr; }
+    }
+
+    .panel {
+      background: var(--dark-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .panel-header {
+      padding: 14px 20px;
+      background: #0f172a;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .browser-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-red { background: #ef4444; }
+    .dot-yellow { background: #f59e0b; }
+    .dot-green { background: #10b981; }
+
+    .browser-url-bar {
+      background: #1e293b;
+      padding: 4px 14px;
+      border-radius: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #94a3b8;
+      width: 60%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Product Showcase Card */
+    .product-mockup {
+      padding: 24px;
+    }
+
+    .product-meta-row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .product-img-box {
+      width: 120px;
+      height: 120px;
+      background: #0f172a;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      flex-shrink: 0;
+    }
+
+    .product-details h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .product-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+
+    .badge-shopee { background: rgba(238, 77, 45, 0.2); color: #ff6b4a; border: 1px solid rgba(238, 77, 45, 0.4); }
+
+    .product-price {
+      font-size: 22px;
+      font-weight: 800;
+      color: #38bdf8;
+      margin-bottom: 6px;
+    }
+
+    .rating-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: #fbbf24;
+    }
+
+    /* Extension Simulator View */
+    .extension-simulator {
+      padding: 24px;
+      background: #0f172a;
+      height: 100%;
+    }
+
+    .ext-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 18px;
+    }
+
+    .ext-title-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .ext-title-box h4 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .select-custom, .input-custom {
+      width: 100%;
+      background: #1e293b;
+      border: 1px solid var(--border);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 16px 0;
+      background: #1e293b;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #e2e8f0;
+      cursor: pointer;
+    }
+
+    .checkbox-item input {
+      accent-color: var(--primary);
+    }
+
+    .btn-run {
+      width: 100%;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #fff;
+      border: none;
+      padding: 13px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s;
+      box-shadow: 0 4px 14px rgba(37,99,235,0.4);
+    }
+
+    .btn-run:hover {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      transform: translateY(-2px);
+    }
+
+    /* Live Progress Box */
+    .progress-box {
+      margin-top: 20px;
+      display: none;
+    }
+
+    .progress-bar-bg {
+      background: #1e293b;
+      height: 8px;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar-fill {
+      background: linear-gradient(90deg, #3b82f6, #10b981);
+      height: 100%;
+      width: 0%;
+      transition: width 0.4s ease;
+    }
+
+    .progress-status-text {
+      font-size: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #38bdf8;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Results Dashboard */
+    .results-box {
+      margin-top: 20px;
+      background: #1e293b;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .defect-cluster-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .cluster-card {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 12px;
+    }
+
+    .cluster-title {
+      font-weight: 700;
+      color: #cbd5e1;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .cluster-pct {
+      color: #f87171;
+    }
+
+    .cluster-bar {
+      height: 4px;
+      background: #334155;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .cluster-bar-fill {
+      height: 100%;
+      background: #ef4444;
+    }
+
+    .download-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .btn-download-sample {
+      flex: 1;
+      background: #0284c7;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .btn-download-sample:hover {
+      background: #0369a1;
+    }
+
+    .btn-download-excel {
+      background: #16a34a;
+    }
+
+    .btn-download-excel:hover {
+      background: #15803d;
+    }
+
+    /* Terminal Section */
+    .terminal-box {
+      background: #090d16;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.7;
+      overflow-x: auto;
+    }
+
+    .term-prompt { color: #10b981; }
+    .term-cmd { color: #f8fafc; font-weight: 600; }
+    .term-output { color: #94a3b8; }
+    .term-success { color: #38bdf8; }
+
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    @media (max-width: 800px) {
+      .features-grid { grid-template-columns: 1fr; }
+    }
+
+    .feature-card {
+      background: var(--dark-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .feature-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* CTA Section */
+    .cta-banner {
+      background: linear-gradient(135deg, #1e3a8a, #0f172a);
+      border: 1px solid #3b82f6;
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .cta-banner h2 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .cta-banner p {
+      font-size: 15px;
+      color: #cbd5e1;
+      max-width: 600px;
+      margin: 0 auto 24px;
+    }
+
+    .btn-buy-large {
+      background: #fbbf24;
+      color: #000;
+      padding: 15px 36px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 20px rgba(251,191,36,0.3);
+      transition: all 0.2s;
+    }
+
+    .btn-buy-large:hover {
+      background: #f59e0b;
+      transform: scale(1.03);
+    }
+
+    /* Tab switcher handling */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Header -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <span class="badge-live">Live Interactive Demo</span>
+      <span>Official Codester Showcase — OmniScraper v1.0.0</span>
+    </div>
+    <a href="https://www.codester.com/items/71146/omniscraper-e-commerce-price-review-scrape?ref=ancuboy" class="btn-buy-header" target="_blank">
+      <span>Get License ($24)</span> ➔
+    </a>
+  </div>
+
+  <!-- Header Brand & Nav -->
+  <header>
+    <div class="logo-container">
+      <img src="images/item-thumbnail-80x80.png" alt="OmniScraper Logo" class="logo-icon">
+      <div class="brand-text">
+        <h1>OmniScraper</h1>
+        <p>E-Commerce Competitor Price & Negative Review Extractor</p>
+      </div>
+    </div>
+
+    <div class="nav-tabs">
+      <button class="nav-btn active" onclick="switchTab('simulator')">⚡ Interactive Simulator</button>
+      <button class="nav-btn" onclick="switchTab('cli')">💻 Python CLI Engine</button>
+      <button class="nav-btn" onclick="switchTab('docs')">📖 Documentation</button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- TAB 1: INTERACTIVE SIMULATOR -->
+    <div id="tab-simulator" class="tab-content active">
+      <div class="hero-grid">
+        
+        <!-- Left: Target E-Commerce Product Mockup -->
+        <div class="panel">
+          <div class="panel-header">
+            <div class="browser-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="browser-url-bar" id="mock-url-bar">https://shopee.co.id/product/4910284/ultrabass-anc-wireless</div>
+            <span style="font-size:11px; color:#10b981;">● Live Web</span>
+          </div>
+
+          <div class="product-mockup">
+            <div class="product-meta-row">
+              <div class="product-img-box">🎧</div>
+              <div class="product-details">
+                <span class="product-badge badge-shopee" id="platform-badge">Shopee Official Store</span>
+                <h3 id="product-title">UltraBass Active Noise Cancelling Wireless Headphones (Gen 3)</h3>
+                <div class="product-price" id="product-price">Rp 489.000 <span style="font-size:13px; color:#94a3b8; text-decoration:line-through;">Rp 750.000</span></div>
+                <div class="rating-row">
+                  <span>★★★★☆</span>
+                  <span style="color:#fff; font-weight:700;">4.2</span>
+                  <span style="color:#94a3b8;">(1,842 ratings • 542 total reviews)</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="background:#0f172a; border-radius:10px; padding:14px; border:1px solid var(--border); font-size:13px; margin-bottom:16px;">
+              <b style="color:#f8fafc;">Sample Negative Customer Reviews on Page:</b>
+              <div style="margin-top:8px; display:flex; flex-direction:column; gap:10px;">
+                <div style="background:#1e293b; padding:10px; border-radius:6px;">
+                  <span style="color:#ef4444;">★☆☆☆☆</span> <b style="color:#cbd5e1;">Rian M.</b> <span style="color:#64748b;">(2 days ago)</span>
+                  <p style="color:#94a3b8; font-size:12px; margin-top:2px;">"Box penyok parah pas nyampe, busa earphone sebelah kiri sobek. Kurir lempar paket ke teras rumah!"</p>
+                </div>
+                <div style="background:#1e293b; padding:10px; border-radius:6px;">
+                  <span style="color:#f59e0b;">★★☆☆☆</span> <b style="color:#cbd5e1;">Sarah D.</b> <span style="color:#64748b;">(1 week ago)</span>
+                  <p style="color:#94a3b8; font-size:12px; margin-top:2px;">"Suara bass sember kalau volume di atas 80%. Baterai cuma tahan 3 jam padahal deskripsi bilang 24 jam."</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="font-size:12px; color:#64748b; text-align:center;">
+              💡 <i>Click "Run OmniScraper" on the right panel to extract and analyze these reviews in 3 clicks!</i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: OmniScraper Extension Simulator -->
+        <div class="panel">
+          <div class="panel-header">
+            <span style="color:#38bdf8;">OmniScraper Chrome MV3 Extension Simulator</span>
+            <span style="font-size:11px; color:#94a3b8;">v1.0.0 Pro</span>
+          </div>
+
+          <div class="extension-simulator">
+            <div class="ext-header">
+              <div class="ext-title-box">
+                <img src="images/item-thumbnail-80x80.png" width="28" height="28" style="border-radius:6px;">
+                <h4>OmniScraper Quick Audit</h4>
+              </div>
+              <span style="font-size:11px; background:#1e293b; padding:2px 8px; border-radius:4px; border:1px solid var(--border); color:#10b981;">Ready</span>
+            </div>
+
+            <div class="form-group">
+              <label>Select Target Marketplace</label>
+              <select class="select-custom" id="sel-platform" onchange="changePlatform()">
+                <option value="shopee">Shopee (ID/MY/SG/PH/TH/VN/TW)</option>
+                <option value="tokopedia">Tokopedia (Official Store & Power Merchant)</option>
+                <option value="amazon">Amazon (US/UK/DE/JP)</option>
+              </select>
+            </div>
+
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" id="chk-defects" checked>
+                <span><b>Smart Negative Review Filter</b> (Extract only 1–3★ complaints)</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" id="chk-nlp" checked>
+                <span><b>6-Cluster NLP Defect Categorizer</b> (Packaging, Hardware, Sizing, etc.)</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" id="chk-pricing" checked>
+                <span><b>Competitor Pricing & Variant Matrix</b> (Price ranges & stock count)</span>
+              </label>
+            </div>
+
+            <button class="btn-run" id="btn-scrape" onclick="runScraperDemo()">
+              <span>⚡ Run OmniScraper Audit (1-Click)</span>
+            </button>
+
+            <!-- Progress Bar Box -->
+            <div class="progress-box" id="progress-container">
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progress-fill"></div>
+              </div>
+              <div class="progress-status-text">
+                <span id="progress-label">Connecting to active DOM...</span>
+                <span id="progress-pct">0%</span>
+              </div>
+            </div>
+
+            <!-- Results Output -->
+            <div class="results-box" id="results-container">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:13px; font-weight:700; color:#10b981;">✔ Extraction Completed</span>
+                <span style="font-size:11px; color:#94a3b8;">542 reviews filtered in 1.4s</span>
+              </div>
+
+              <div class="defect-cluster-grid">
+                <div class="cluster-card">
+                  <div class="cluster-title">
+                    <span>⚠️ Hardware / Distortion</span>
+                    <span class="cluster-pct">45%</span>
+                  </div>
+                  <div class="cluster-bar"><div class="cluster-bar-fill" style="width:45%;"></div></div>
+                </div>
+
+                <div class="cluster-card">
+                  <div class="cluster-title">
+                    <span>📦 Packaging Damage</span>
+                    <span class="cluster-pct">24%</span>
+                  </div>
+                  <div class="cluster-bar"><div class="cluster-bar-fill" style="width:24%;"></div></div>
+                </div>
+
+                <div class="cluster-card">
+                  <div class="cluster-title">
+                    <span>⏱️ Courier / Delivery Delay</span>
+                    <span class="cluster-pct">18%</span>
+                  </div>
+                  <div class="cluster-bar"><div class="cluster-bar-fill" style="width:18%;"></div></div>
+                </div>
+
+                <div class="cluster-card">
+                  <div class="cluster-title">
+                    <span>💬 Poor Seller CS</span>
+                    <span class="cluster-pct">13%</span>
+                  </div>
+                  <div class="cluster-bar"><div class="cluster-bar-fill" style="width:13%;"></div></div>
+                </div>
+              </div>
+
+              <div class="download-actions">
+                <a href="samples/omniscraper_Shopee_UltraBass_Active_Noise_Cancelling_Wirele_20260921_142721.xlsx" download class="btn-download-sample btn-download-excel">
+                  📊 Download Excel (.xlsx)
+                </a>
+                <a href="samples/omniscraper_Shopee_UltraBass_Active_Noise_Cancelling_Wirele_20260921_142721.csv" download class="btn-download-sample">
+                  📄 Download CSV
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TAB 2: PYTHON CLI TERMINAL SIMULATOR -->
+    <div id="tab-cli" class="tab-content">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="browser-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span style="font-family:'JetBrains Mono'; font-size:12px; color:#94a3b8;">Terminal — bash & python3 scraper.py</span>
+          <span>Python 3.11</span>
+        </div>
+        <div class="terminal-box">
+          <p><span class="term-prompt">user@workstation:~$</span> <span class="term-cmd">cd omniscraper-python-core && python scraper.py --test</span></p>
+          <p class="term-output">[OMNISCRAPER] Running automated headless verification suite (9 checks)...</p>
+          <p class="term-success">[PASS] test_anti_blocking_jitter_range (1.5s - 4.5s random delay) ... OK</p>
+          <p class="term-success">[PASS] test_user_agent_rotation_pool (Chrome, Firefox, Safari desktop UAs) ... OK</p>
+          <p class="term-success">[PASS] test_nlp_6_cluster_defect_classifier ... OK</p>
+          <p class="term-success">[PASS] test_excel_styled_summary_sheet_creation ... OK</p>
+          <p class="term-success">[PASS] test_csv_utf8_bom_compatibility ... OK</p>
+          <p class="term-success">[PASS] test_shopee_review_pagination_parser ... OK</p>
+          <p class="term-success">[PASS] test_tokopedia_graphql_response_sanitizer ... OK</p>
+          <p class="term-success">[PASS] test_amazon_bs4_review_extractor ... OK</p>
+          <p class="term-success">[PASS] test_strict_csp_compliance_zero_eval ... OK</p>
+          <p class="term-output">----------------------------------------------------------------------</p>
+          <p class="term-success" style="font-weight:700;">Ran 9 tests in 0.412s — OK (100% Passed)</p>
+          <br>
+          <p><span class="term-prompt">user@workstation:~$</span> <span class="term-cmd">python scraper.py --urls competitor_urls.txt --filter-defects --export-excel</span></p>
+          <p class="term-output">[SCRAPING] Target: Shopee ID (Product ID: 4910284)</p>
+          <p class="term-output">[FETCHING] Page 1/5 | 50 reviews retrieved (Jitter: 2.1s)</p>
+          <p class="term-output">[FETCHING] Page 2/5 | 50 reviews retrieved (Jitter: 3.4s)</p>
+          <p class="term-output">[ANALYSIS] 142 Negative reviews classified into 6 defect clusters.</p>
+          <p class="term-success">[EXPORT] Excel file saved: ./exports/omniscraper_Shopee_UltraBass_20260921.xlsx (3 sheets)</p>
+          <p class="term-success">[EXPORT] CSV file saved: ./exports/omniscraper_Shopee_UltraBass_20260921.csv (UTF-8 BOM)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: DOCUMENTATION & SETUP GUIDE -->
+    <div id="tab-docs" class="tab-content">
+      <div class="panel" style="padding:30px;">
+        <h2 style="font-size:22px; margin-bottom:16px; color:#38bdf8;">OmniScraper Quick Installation Guide (3 Simple Steps)</h2>
+        
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:30px;">
+          <div style="background:#0f172a; padding:18px; border-radius:10px; border:1px solid var(--border);">
+            <div style="font-size:24px; font-weight:800; color:#3b82f6; margin-bottom:6px;">01</div>
+            <h4 style="font-size:15px; margin-bottom:6px;">Unzip Package</h4>
+            <p style="font-size:12px; color:#94a3b8;">Extract the downloaded <code>omniscraper-package.zip</code> on your computer.</p>
+          </div>
+          <div style="background:#0f172a; padding:18px; border-radius:10px; border:1px solid var(--border);">
+            <div style="font-size:24px; font-weight:800; color:#3b82f6; margin-bottom:6px;">02</div>
+            <h4 style="font-size:15px; margin-bottom:6px;">Load in Chrome</h4>
+            <p style="font-size:12px; color:#94a3b8;">Go to <code>chrome://extensions</code>, enable <b>Developer mode</b>, and click <b>Load unpacked</b>.</p>
+          </div>
+          <div style="background:#0f172a; padding:18px; border-radius:10px; border:1px solid var(--border);">
+            <div style="font-size:24px; font-weight:800; color:#3b82f6; margin-bottom:6px;">03</div>
+            <h4 style="font-size:15px; margin-bottom:6px;">Start Scraping</h4>
+            <p style="font-size:12px; color:#94a3b8;">Open any Shopee, Tokopedia, or Amazon product page and click the OmniScraper extension icon.</p>
+          </div>
+        </div>
+
+        <div style="background:#0f172a; padding:20px; border-radius:10px; border:1px solid var(--border);">
+          <h4 style="font-size:16px; margin-bottom:10px; color:#fff;">Full Source Code & Offline Documentation Included</h4>
+          <p style="font-size:13px; color:#94a3b8; line-height:1.7;">
+            When you purchase the Regular License on Codester ($24), you receive 100% unminified, clean source code for both the Google Chrome Extension (Manifest V3) and Python CLI engine. No subscription fees, no third-party API dependencies, and lifetime free updates.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Overview -->
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>Manifest V3 Compliant</h3>
+        <p>100% Google Chrome Web Store & MV3 compliant with strict CSP (zero eval, zero remote scripts).</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <h3>6-Cluster NLP Categorizer</h3>
+        <p>Isolate competitor flaws in packaging, dead on arrival parts, sizing errors, and poor customer support.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Dual Engine (Web + CLI)</h3>
+        <p>Use the point-and-click browser extension or integrate the headless Python scraper into your data pipeline.</p>
+      </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="cta-banner">
+      <h2>Ready to Outrank Your Competitors?</h2>
+      <p>Download OmniScraper today on Codester. Instant download, full source code included, verified quality by Codester review team.</p>
+      <a href="https://www.codester.com/items/71146/omniscraper-e-commerce-price-review-scrape?ref=ancuboy" class="btn-buy-large" target="_blank">
+        <span>Get Regular License on Codester ($24)</span> ➔
+      </a>
+    </div>
+
+  </div>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('tab-' + tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    function changePlatform() {
+      const p = document.getElementById('sel-platform').value;
+      const urlBar = document.getElementById('mock-url-bar');
+      const badge = document.getElementById('platform-badge');
+      const title = document.getElementById('product-title');
+      const price = document.getElementById('product-price');
+
+      if (p === 'shopee') {
+        urlBar.innerText = 'https://shopee.co.id/product/4910284/ultrabass-anc-wireless';
+        badge.className = 'product-badge badge-shopee';
+        badge.innerText = 'Shopee Official Store';
+        title.innerText = 'UltraBass Active Noise Cancelling Wireless Headphones (Gen 3)';
+        price.innerHTML = 'Rp 489.000 <span style=\"font-size:13px; color:#94a3b8; text-decoration:line-through;\">Rp 750.000</span>';
+      } else if (p === 'tokopedia') {
+        urlBar.innerText = 'https://www.tokopedia.com/audioofficial/ultrabass-anc-pro-black';
+        badge.className = 'product-badge';
+        badge.style.background = 'rgba(3, 172, 14, 0.2)';
+        badge.style.color = '#10b981';
+        badge.style.border = '1px solid rgba(3, 172, 14, 0.4)';
+        badge.innerText = 'Tokopedia Power Merchant Pro';
+        title.innerText = 'UltraBass ANC Pro Bluetooth Headset Gaming & Music';
+        price.innerHTML = 'Rp 510.000 <span style=\"font-size:13px; color:#94a3b8; text-decoration:line-through;\">Rp 800.000</span>';
+      } else if (p === 'amazon') {
+        urlBar.innerText = 'https://www.amazon.com/dp/B09X4KLM92';
+        badge.className = 'product-badge';
+        badge.style.background = 'rgba(255, 153, 0, 0.2)';
+        badge.style.color = '#fbbf24';
+        badge.style.border = '1px solid rgba(255, 153, 0, 0.4)';
+        badge.innerText = 'Amazon Prime Verified';
+        title.innerText = 'UltraBass Hybrid Active Noise Cancelling Over-Ear Headphones';
+        price.innerHTML = '$49.99 <span style=\"font-size:13px; color:#94a3b8; text-decoration:line-through;\">$79.99</span>';
+      }
+    }
+
+    function runScraperDemo() {
+      const btn = document.getElementById('btn-scrape');
+      const progressBox = document.getElementById('progress-container');
+      const progressBar = document.getElementById('progress-fill');
+      const progressLabel = document.getElementById('progress-label');
+      const progressPct = document.getElementById('progress-pct');
+      const resultsBox = document.getElementById('results-container');
+
+      btn.disabled = true;
+      btn.style.opacity = '0.6';
+      progressBox.style.display = 'block';
+      resultsBox.style.display = 'none';
+
+      let pct = 0;
+      const steps = [
+        { p: 20, text: 'Injecting content script to active tab...' },
+        { p: 45, text: 'Parsing review pagination & star filters...' },
+        { p: 70, text: 'Running 6-Cluster NLP defect classifier...' },
+        { p: 90, text: 'Compiling styled Excel & CSV report...' },
+        { p: 100, text: 'Audit completed successfully!' }
+      ];
+
+      let idx = 0;
+      const interval = setInterval(() => {
+        if (idx < steps.length) {
+          progressBar.style.width = steps[idx].p + '%';
+          progressPct.innerText = steps[idx].p + '%';
+          progressLabel.innerText = steps[idx].text;
+          idx++;
+        } else {
+          clearInterval(interval);
+          setTimeout(() => {
+            progressBox.style.display = 'none';
+            resultsBox.style.display = 'block';
+            btn.disabled = false;
+            btn.style.opacity = '1';
+          }, 500);
+        }
+      }, 350);
+    }
+  </script>
+</body>
+</html>
