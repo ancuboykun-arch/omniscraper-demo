@@ -1,0 +1,1722 @@
+{
+  "product": {
+    "platform": "Shopee",
+    "url": "https://shopee.co.id/product/mock-store/ultrabass-headphones",
+    "title": "UltraBass Active Noise Cancelling Wireless Headphones Over-Ear (Competitor Model X)",
+    "price": "Rp 349.000",
+    "original_price": "Rp 699.000",
+    "discount_percent": "50%",
+    "rating": "4.2",
+    "total_sold": "8.7k",
+    "store_name": "AudioTech Pro Official Store",
+    "variants": [
+      {
+        "name": "Matte Black",
+        "price": "Rp 349.000",
+        "stock": 420
+      },
+      {
+        "name": "Arctic Silver",
+        "price": "Rp 359.000",
+        "stock": 180
+      },
+      {
+        "name": "Midnight Blue",
+        "price": "Rp 349.000",
+        "stock": 65
+      }
+    ]
+  },
+  "summary": {
+    "total_reviews": 100,
+    "critical_count": 70,
+    "critical_percentage": 70.0,
+    "positive_count": 30,
+    "neutral_count": 0,
+    "rating_distribution": {
+      "1": 30,
+      "2": 20,
+      "3": 20,
+      "4": 10,
+      "5": 20
+    },
+    "top_defect_categories": [
+      {
+        "name": "Item Broken / Defect",
+        "count": 20
+      },
+      {
+        "name": "Inaccurate / Wrong Variant",
+        "count": 20
+      },
+      {
+        "name": "Packaging & Handling",
+        "count": 10
+      },
+      {
+        "name": "Seller Service",
+        "count": 10
+      },
+      {
+        "name": "Counterfeit / Authenticity",
+        "count": 10
+      },
+      {
+        "name": "Delayed Logistics",
+        "count": 10
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "review_id": "MOCK-SHO-1000",
+      "platform": "Shopee",
+      "author_masked": "user_a***0",
+      "rating": 1,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-20",
+      "review_text": "Barang mati total pas dicolok tidak menyala sama sekali! Tombol power patah. Sangat kecewa, minta retur dipersulit.",
+      "helpful_count": 24,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "patah"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1001",
+      "platform": "Shopee",
+      "author_masked": "user_b***1",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-20",
+      "review_text": "Packing hancur remuk di jalan, kardus sobek dan tanpa bubble wrap tebal! Produk lecet parah.",
+      "helpful_count": 19,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "PACKAGING",
+          "category_name": "Packaging & Handling",
+          "keyword": "remuk"
+        }
+      ],
+      "defect_categories": "Packaging & Handling",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1002",
+      "platform": "Shopee",
+      "author_masked": "user_c***2",
+      "rating": 2,
+      "variant_purchased": "Arctic Silver",
+      "review_date": "2026-09-20",
+      "review_text": "Pesan warna Arctic Silver dikasih Matte Black! Salah barang dan seller tidak mau tanggung jawab pas dikomplain di chat.",
+      "helpful_count": 14,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "salah barang"
+        },
+        {
+          "category_id": "SERVICE",
+          "category_name": "Seller Service",
+          "keyword": "tidak mau tanggung jawab"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Seller Service",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1003",
+      "platform": "Shopee",
+      "author_masked": "user_d***3",
+      "rating": 2,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-20",
+      "review_text": "Hati-hati barang kw bukan original! Kualitas plastik murahan, suara kresek-kresek, beda jauh sama yang asli.",
+      "helpful_count": 18,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "FAKE_SCAM",
+          "category_name": "Counterfeit / Authenticity",
+          "keyword": "barang kw"
+        }
+      ],
+      "defect_categories": "Counterfeit / Authenticity",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1004",
+      "platform": "Shopee",
+      "author_masked": "user_e***4",
+      "rating": 3,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-20",
+      "review_text": "Pengiriman lama banget seminggu lebih baru sampai. Busa telinga agak kekecilan dan bikin gerah setelah 1 jam pakai.",
+      "helpful_count": 10,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "kekecilan"
+        },
+        {
+          "category_id": "DELIVERY",
+          "category_name": "Delayed Logistics",
+          "keyword": "lama banget"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Delayed Logistics",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1008",
+      "platform": "Shopee",
+      "author_masked": "user_i***8",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-20",
+      "review_text": "Baterai drop parah! Baru dipakai 20 menit sudah mati, dicas 3 jam tidak nambah. Rusak cacat pabrik.",
+      "helpful_count": 34,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "cacat"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1009",
+      "platform": "Shopee",
+      "author_masked": "user_j***9",
+      "rating": 3,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-20",
+      "review_text": "Bluetooth sering disconnect kalau jarak lewat 3 meter. Mikrofon kurang jernih kalau dipakai telepon.",
+      "helpful_count": 8,
+      "has_media": false,
+      "defect_tags": [],
+      "defect_categories": "None",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1010",
+      "platform": "Shopee",
+      "author_masked": "user_k***0",
+      "rating": 1,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-19",
+      "review_text": "Barang mati total pas dicolok tidak menyala sama sekali! Tombol power patah. Sangat kecewa, minta retur dipersulit.",
+      "helpful_count": 24,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "patah"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1011",
+      "platform": "Shopee",
+      "author_masked": "user_l***1",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-19",
+      "review_text": "Packing hancur remuk di jalan, kardus sobek dan tanpa bubble wrap tebal! Produk lecet parah.",
+      "helpful_count": 19,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "PACKAGING",
+          "category_name": "Packaging & Handling",
+          "keyword": "remuk"
+        }
+      ],
+      "defect_categories": "Packaging & Handling",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1012",
+      "platform": "Shopee",
+      "author_masked": "user_m***2",
+      "rating": 2,
+      "variant_purchased": "Arctic Silver",
+      "review_date": "2026-09-19",
+      "review_text": "Pesan warna Arctic Silver dikasih Matte Black! Salah barang dan seller tidak mau tanggung jawab pas dikomplain di chat.",
+      "helpful_count": 14,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "salah barang"
+        },
+        {
+          "category_id": "SERVICE",
+          "category_name": "Seller Service",
+          "keyword": "tidak mau tanggung jawab"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Seller Service",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1013",
+      "platform": "Shopee",
+      "author_masked": "user_n***3",
+      "rating": 2,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-19",
+      "review_text": "Hati-hati barang kw bukan original! Kualitas plastik murahan, suara kresek-kresek, beda jauh sama yang asli.",
+      "helpful_count": 18,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "FAKE_SCAM",
+          "category_name": "Counterfeit / Authenticity",
+          "keyword": "barang kw"
+        }
+      ],
+      "defect_categories": "Counterfeit / Authenticity",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1014",
+      "platform": "Shopee",
+      "author_masked": "user_o***4",
+      "rating": 3,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-19",
+      "review_text": "Pengiriman lama banget seminggu lebih baru sampai. Busa telinga agak kekecilan dan bikin gerah setelah 1 jam pakai.",
+      "helpful_count": 10,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "kekecilan"
+        },
+        {
+          "category_id": "DELIVERY",
+          "category_name": "Delayed Logistics",
+          "keyword": "lama banget"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Delayed Logistics",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1018",
+      "platform": "Shopee",
+      "author_masked": "user_s***8",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-19",
+      "review_text": "Baterai drop parah! Baru dipakai 20 menit sudah mati, dicas 3 jam tidak nambah. Rusak cacat pabrik.",
+      "helpful_count": 34,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "cacat"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1019",
+      "platform": "Shopee",
+      "author_masked": "user_t***9",
+      "rating": 3,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-19",
+      "review_text": "Bluetooth sering disconnect kalau jarak lewat 3 meter. Mikrofon kurang jernih kalau dipakai telepon.",
+      "helpful_count": 8,
+      "has_media": false,
+      "defect_tags": [],
+      "defect_categories": "None",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1020",
+      "platform": "Shopee",
+      "author_masked": "user_u***0",
+      "rating": 1,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-18",
+      "review_text": "Barang mati total pas dicolok tidak menyala sama sekali! Tombol power patah. Sangat kecewa, minta retur dipersulit.",
+      "helpful_count": 24,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "patah"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1021",
+      "platform": "Shopee",
+      "author_masked": "user_v***1",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-18",
+      "review_text": "Packing hancur remuk di jalan, kardus sobek dan tanpa bubble wrap tebal! Produk lecet parah.",
+      "helpful_count": 19,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "PACKAGING",
+          "category_name": "Packaging & Handling",
+          "keyword": "remuk"
+        }
+      ],
+      "defect_categories": "Packaging & Handling",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1022",
+      "platform": "Shopee",
+      "author_masked": "user_w***2",
+      "rating": 2,
+      "variant_purchased": "Arctic Silver",
+      "review_date": "2026-09-18",
+      "review_text": "Pesan warna Arctic Silver dikasih Matte Black! Salah barang dan seller tidak mau tanggung jawab pas dikomplain di chat.",
+      "helpful_count": 14,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "salah barang"
+        },
+        {
+          "category_id": "SERVICE",
+          "category_name": "Seller Service",
+          "keyword": "tidak mau tanggung jawab"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Seller Service",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1023",
+      "platform": "Shopee",
+      "author_masked": "user_x***3",
+      "rating": 2,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-18",
+      "review_text": "Hati-hati barang kw bukan original! Kualitas plastik murahan, suara kresek-kresek, beda jauh sama yang asli.",
+      "helpful_count": 18,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "FAKE_SCAM",
+          "category_name": "Counterfeit / Authenticity",
+          "keyword": "barang kw"
+        }
+      ],
+      "defect_categories": "Counterfeit / Authenticity",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1024",
+      "platform": "Shopee",
+      "author_masked": "user_y***4",
+      "rating": 3,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-18",
+      "review_text": "Pengiriman lama banget seminggu lebih baru sampai. Busa telinga agak kekecilan dan bikin gerah setelah 1 jam pakai.",
+      "helpful_count": 10,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "kekecilan"
+        },
+        {
+          "category_id": "DELIVERY",
+          "category_name": "Delayed Logistics",
+          "keyword": "lama banget"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Delayed Logistics",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1028",
+      "platform": "Shopee",
+      "author_masked": "user_c***8",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-18",
+      "review_text": "Baterai drop parah! Baru dipakai 20 menit sudah mati, dicas 3 jam tidak nambah. Rusak cacat pabrik.",
+      "helpful_count": 34,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "cacat"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1029",
+      "platform": "Shopee",
+      "author_masked": "user_d***9",
+      "rating": 3,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-18",
+      "review_text": "Bluetooth sering disconnect kalau jarak lewat 3 meter. Mikrofon kurang jernih kalau dipakai telepon.",
+      "helpful_count": 8,
+      "has_media": false,
+      "defect_tags": [],
+      "defect_categories": "None",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1030",
+      "platform": "Shopee",
+      "author_masked": "user_e***0",
+      "rating": 1,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-17",
+      "review_text": "Barang mati total pas dicolok tidak menyala sama sekali! Tombol power patah. Sangat kecewa, minta retur dipersulit.",
+      "helpful_count": 24,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "patah"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1031",
+      "platform": "Shopee",
+      "author_masked": "user_f***1",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-17",
+      "review_text": "Packing hancur remuk di jalan, kardus sobek dan tanpa bubble wrap tebal! Produk lecet parah.",
+      "helpful_count": 19,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "PACKAGING",
+          "category_name": "Packaging & Handling",
+          "keyword": "remuk"
+        }
+      ],
+      "defect_categories": "Packaging & Handling",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1032",
+      "platform": "Shopee",
+      "author_masked": "user_g***2",
+      "rating": 2,
+      "variant_purchased": "Arctic Silver",
+      "review_date": "2026-09-17",
+      "review_text": "Pesan warna Arctic Silver dikasih Matte Black! Salah barang dan seller tidak mau tanggung jawab pas dikomplain di chat.",
+      "helpful_count": 14,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "salah barang"
+        },
+        {
+          "category_id": "SERVICE",
+          "category_name": "Seller Service",
+          "keyword": "tidak mau tanggung jawab"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Seller Service",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1033",
+      "platform": "Shopee",
+      "author_masked": "user_h***3",
+      "rating": 2,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-17",
+      "review_text": "Hati-hati barang kw bukan original! Kualitas plastik murahan, suara kresek-kresek, beda jauh sama yang asli.",
+      "helpful_count": 18,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "FAKE_SCAM",
+          "category_name": "Counterfeit / Authenticity",
+          "keyword": "barang kw"
+        }
+      ],
+      "defect_categories": "Counterfeit / Authenticity",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1034",
+      "platform": "Shopee",
+      "author_masked": "user_i***4",
+      "rating": 3,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-17",
+      "review_text": "Pengiriman lama banget seminggu lebih baru sampai. Busa telinga agak kekecilan dan bikin gerah setelah 1 jam pakai.",
+      "helpful_count": 10,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "kekecilan"
+        },
+        {
+          "category_id": "DELIVERY",
+          "category_name": "Delayed Logistics",
+          "keyword": "lama banget"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Delayed Logistics",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1038",
+      "platform": "Shopee",
+      "author_masked": "user_m***8",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-17",
+      "review_text": "Baterai drop parah! Baru dipakai 20 menit sudah mati, dicas 3 jam tidak nambah. Rusak cacat pabrik.",
+      "helpful_count": 34,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "cacat"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1039",
+      "platform": "Shopee",
+      "author_masked": "user_n***9",
+      "rating": 3,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-17",
+      "review_text": "Bluetooth sering disconnect kalau jarak lewat 3 meter. Mikrofon kurang jernih kalau dipakai telepon.",
+      "helpful_count": 8,
+      "has_media": false,
+      "defect_tags": [],
+      "defect_categories": "None",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1040",
+      "platform": "Shopee",
+      "author_masked": "user_o***0",
+      "rating": 1,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-16",
+      "review_text": "Barang mati total pas dicolok tidak menyala sama sekali! Tombol power patah. Sangat kecewa, minta retur dipersulit.",
+      "helpful_count": 24,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "patah"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1041",
+      "platform": "Shopee",
+      "author_masked": "user_p***1",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-16",
+      "review_text": "Packing hancur remuk di jalan, kardus sobek dan tanpa bubble wrap tebal! Produk lecet parah.",
+      "helpful_count": 19,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "PACKAGING",
+          "category_name": "Packaging & Handling",
+          "keyword": "remuk"
+        }
+      ],
+      "defect_categories": "Packaging & Handling",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1042",
+      "platform": "Shopee",
+      "author_masked": "user_q***2",
+      "rating": 2,
+      "variant_purchased": "Arctic Silver",
+      "review_date": "2026-09-16",
+      "review_text": "Pesan warna Arctic Silver dikasih Matte Black! Salah barang dan seller tidak mau tanggung jawab pas dikomplain di chat.",
+      "helpful_count": 14,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "salah barang"
+        },
+        {
+          "category_id": "SERVICE",
+          "category_name": "Seller Service",
+          "keyword": "tidak mau tanggung jawab"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Seller Service",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1043",
+      "platform": "Shopee",
+      "author_masked": "user_r***3",
+      "rating": 2,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-16",
+      "review_text": "Hati-hati barang kw bukan original! Kualitas plastik murahan, suara kresek-kresek, beda jauh sama yang asli.",
+      "helpful_count": 18,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "FAKE_SCAM",
+          "category_name": "Counterfeit / Authenticity",
+          "keyword": "barang kw"
+        }
+      ],
+      "defect_categories": "Counterfeit / Authenticity",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1044",
+      "platform": "Shopee",
+      "author_masked": "user_s***4",
+      "rating": 3,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-16",
+      "review_text": "Pengiriman lama banget seminggu lebih baru sampai. Busa telinga agak kekecilan dan bikin gerah setelah 1 jam pakai.",
+      "helpful_count": 10,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "kekecilan"
+        },
+        {
+          "category_id": "DELIVERY",
+          "category_name": "Delayed Logistics",
+          "keyword": "lama banget"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Delayed Logistics",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1048",
+      "platform": "Shopee",
+      "author_masked": "user_w***8",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-16",
+      "review_text": "Baterai drop parah! Baru dipakai 20 menit sudah mati, dicas 3 jam tidak nambah. Rusak cacat pabrik.",
+      "helpful_count": 34,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "cacat"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1049",
+      "platform": "Shopee",
+      "author_masked": "user_x***9",
+      "rating": 3,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-16",
+      "review_text": "Bluetooth sering disconnect kalau jarak lewat 3 meter. Mikrofon kurang jernih kalau dipakai telepon.",
+      "helpful_count": 8,
+      "has_media": false,
+      "defect_tags": [],
+      "defect_categories": "None",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1050",
+      "platform": "Shopee",
+      "author_masked": "user_y***0",
+      "rating": 1,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-15",
+      "review_text": "Barang mati total pas dicolok tidak menyala sama sekali! Tombol power patah. Sangat kecewa, minta retur dipersulit.",
+      "helpful_count": 24,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "patah"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1051",
+      "platform": "Shopee",
+      "author_masked": "user_z***1",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-15",
+      "review_text": "Packing hancur remuk di jalan, kardus sobek dan tanpa bubble wrap tebal! Produk lecet parah.",
+      "helpful_count": 19,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "PACKAGING",
+          "category_name": "Packaging & Handling",
+          "keyword": "remuk"
+        }
+      ],
+      "defect_categories": "Packaging & Handling",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1052",
+      "platform": "Shopee",
+      "author_masked": "user_a***2",
+      "rating": 2,
+      "variant_purchased": "Arctic Silver",
+      "review_date": "2026-09-15",
+      "review_text": "Pesan warna Arctic Silver dikasih Matte Black! Salah barang dan seller tidak mau tanggung jawab pas dikomplain di chat.",
+      "helpful_count": 14,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "salah barang"
+        },
+        {
+          "category_id": "SERVICE",
+          "category_name": "Seller Service",
+          "keyword": "tidak mau tanggung jawab"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Seller Service",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1053",
+      "platform": "Shopee",
+      "author_masked": "user_b***3",
+      "rating": 2,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-15",
+      "review_text": "Hati-hati barang kw bukan original! Kualitas plastik murahan, suara kresek-kresek, beda jauh sama yang asli.",
+      "helpful_count": 18,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "FAKE_SCAM",
+          "category_name": "Counterfeit / Authenticity",
+          "keyword": "barang kw"
+        }
+      ],
+      "defect_categories": "Counterfeit / Authenticity",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1054",
+      "platform": "Shopee",
+      "author_masked": "user_c***4",
+      "rating": 3,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-15",
+      "review_text": "Pengiriman lama banget seminggu lebih baru sampai. Busa telinga agak kekecilan dan bikin gerah setelah 1 jam pakai.",
+      "helpful_count": 10,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "kekecilan"
+        },
+        {
+          "category_id": "DELIVERY",
+          "category_name": "Delayed Logistics",
+          "keyword": "lama banget"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Delayed Logistics",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1058",
+      "platform": "Shopee",
+      "author_masked": "user_g***8",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-15",
+      "review_text": "Baterai drop parah! Baru dipakai 20 menit sudah mati, dicas 3 jam tidak nambah. Rusak cacat pabrik.",
+      "helpful_count": 34,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "cacat"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1059",
+      "platform": "Shopee",
+      "author_masked": "user_h***9",
+      "rating": 3,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-15",
+      "review_text": "Bluetooth sering disconnect kalau jarak lewat 3 meter. Mikrofon kurang jernih kalau dipakai telepon.",
+      "helpful_count": 8,
+      "has_media": false,
+      "defect_tags": [],
+      "defect_categories": "None",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1060",
+      "platform": "Shopee",
+      "author_masked": "user_i***0",
+      "rating": 1,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-14",
+      "review_text": "Barang mati total pas dicolok tidak menyala sama sekali! Tombol power patah. Sangat kecewa, minta retur dipersulit.",
+      "helpful_count": 24,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "patah"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1061",
+      "platform": "Shopee",
+      "author_masked": "user_j***1",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-14",
+      "review_text": "Packing hancur remuk di jalan, kardus sobek dan tanpa bubble wrap tebal! Produk lecet parah.",
+      "helpful_count": 19,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "PACKAGING",
+          "category_name": "Packaging & Handling",
+          "keyword": "remuk"
+        }
+      ],
+      "defect_categories": "Packaging & Handling",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1062",
+      "platform": "Shopee",
+      "author_masked": "user_k***2",
+      "rating": 2,
+      "variant_purchased": "Arctic Silver",
+      "review_date": "2026-09-14",
+      "review_text": "Pesan warna Arctic Silver dikasih Matte Black! Salah barang dan seller tidak mau tanggung jawab pas dikomplain di chat.",
+      "helpful_count": 14,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "salah barang"
+        },
+        {
+          "category_id": "SERVICE",
+          "category_name": "Seller Service",
+          "keyword": "tidak mau tanggung jawab"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Seller Service",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1063",
+      "platform": "Shopee",
+      "author_masked": "user_l***3",
+      "rating": 2,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-14",
+      "review_text": "Hati-hati barang kw bukan original! Kualitas plastik murahan, suara kresek-kresek, beda jauh sama yang asli.",
+      "helpful_count": 18,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "FAKE_SCAM",
+          "category_name": "Counterfeit / Authenticity",
+          "keyword": "barang kw"
+        }
+      ],
+      "defect_categories": "Counterfeit / Authenticity",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1064",
+      "platform": "Shopee",
+      "author_masked": "user_m***4",
+      "rating": 3,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-14",
+      "review_text": "Pengiriman lama banget seminggu lebih baru sampai. Busa telinga agak kekecilan dan bikin gerah setelah 1 jam pakai.",
+      "helpful_count": 10,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "kekecilan"
+        },
+        {
+          "category_id": "DELIVERY",
+          "category_name": "Delayed Logistics",
+          "keyword": "lama banget"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Delayed Logistics",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1068",
+      "platform": "Shopee",
+      "author_masked": "user_q***8",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-14",
+      "review_text": "Baterai drop parah! Baru dipakai 20 menit sudah mati, dicas 3 jam tidak nambah. Rusak cacat pabrik.",
+      "helpful_count": 34,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "cacat"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1069",
+      "platform": "Shopee",
+      "author_masked": "user_r***9",
+      "rating": 3,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-14",
+      "review_text": "Bluetooth sering disconnect kalau jarak lewat 3 meter. Mikrofon kurang jernih kalau dipakai telepon.",
+      "helpful_count": 8,
+      "has_media": false,
+      "defect_tags": [],
+      "defect_categories": "None",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1070",
+      "platform": "Shopee",
+      "author_masked": "user_s***0",
+      "rating": 1,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-13",
+      "review_text": "Barang mati total pas dicolok tidak menyala sama sekali! Tombol power patah. Sangat kecewa, minta retur dipersulit.",
+      "helpful_count": 24,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "patah"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1071",
+      "platform": "Shopee",
+      "author_masked": "user_t***1",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-13",
+      "review_text": "Packing hancur remuk di jalan, kardus sobek dan tanpa bubble wrap tebal! Produk lecet parah.",
+      "helpful_count": 19,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "PACKAGING",
+          "category_name": "Packaging & Handling",
+          "keyword": "remuk"
+        }
+      ],
+      "defect_categories": "Packaging & Handling",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1072",
+      "platform": "Shopee",
+      "author_masked": "user_u***2",
+      "rating": 2,
+      "variant_purchased": "Arctic Silver",
+      "review_date": "2026-09-13",
+      "review_text": "Pesan warna Arctic Silver dikasih Matte Black! Salah barang dan seller tidak mau tanggung jawab pas dikomplain di chat.",
+      "helpful_count": 14,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "salah barang"
+        },
+        {
+          "category_id": "SERVICE",
+          "category_name": "Seller Service",
+          "keyword": "tidak mau tanggung jawab"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Seller Service",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1073",
+      "platform": "Shopee",
+      "author_masked": "user_v***3",
+      "rating": 2,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-13",
+      "review_text": "Hati-hati barang kw bukan original! Kualitas plastik murahan, suara kresek-kresek, beda jauh sama yang asli.",
+      "helpful_count": 18,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "FAKE_SCAM",
+          "category_name": "Counterfeit / Authenticity",
+          "keyword": "barang kw"
+        }
+      ],
+      "defect_categories": "Counterfeit / Authenticity",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1074",
+      "platform": "Shopee",
+      "author_masked": "user_w***4",
+      "rating": 3,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-13",
+      "review_text": "Pengiriman lama banget seminggu lebih baru sampai. Busa telinga agak kekecilan dan bikin gerah setelah 1 jam pakai.",
+      "helpful_count": 10,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "kekecilan"
+        },
+        {
+          "category_id": "DELIVERY",
+          "category_name": "Delayed Logistics",
+          "keyword": "lama banget"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Delayed Logistics",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1078",
+      "platform": "Shopee",
+      "author_masked": "user_a***8",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-13",
+      "review_text": "Baterai drop parah! Baru dipakai 20 menit sudah mati, dicas 3 jam tidak nambah. Rusak cacat pabrik.",
+      "helpful_count": 34,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "cacat"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1079",
+      "platform": "Shopee",
+      "author_masked": "user_b***9",
+      "rating": 3,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-13",
+      "review_text": "Bluetooth sering disconnect kalau jarak lewat 3 meter. Mikrofon kurang jernih kalau dipakai telepon.",
+      "helpful_count": 8,
+      "has_media": false,
+      "defect_tags": [],
+      "defect_categories": "None",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1080",
+      "platform": "Shopee",
+      "author_masked": "user_c***0",
+      "rating": 1,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-12",
+      "review_text": "Barang mati total pas dicolok tidak menyala sama sekali! Tombol power patah. Sangat kecewa, minta retur dipersulit.",
+      "helpful_count": 24,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "patah"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1081",
+      "platform": "Shopee",
+      "author_masked": "user_d***1",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-12",
+      "review_text": "Packing hancur remuk di jalan, kardus sobek dan tanpa bubble wrap tebal! Produk lecet parah.",
+      "helpful_count": 19,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "PACKAGING",
+          "category_name": "Packaging & Handling",
+          "keyword": "remuk"
+        }
+      ],
+      "defect_categories": "Packaging & Handling",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1082",
+      "platform": "Shopee",
+      "author_masked": "user_e***2",
+      "rating": 2,
+      "variant_purchased": "Arctic Silver",
+      "review_date": "2026-09-12",
+      "review_text": "Pesan warna Arctic Silver dikasih Matte Black! Salah barang dan seller tidak mau tanggung jawab pas dikomplain di chat.",
+      "helpful_count": 14,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "salah barang"
+        },
+        {
+          "category_id": "SERVICE",
+          "category_name": "Seller Service",
+          "keyword": "tidak mau tanggung jawab"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Seller Service",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1083",
+      "platform": "Shopee",
+      "author_masked": "user_f***3",
+      "rating": 2,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-12",
+      "review_text": "Hati-hati barang kw bukan original! Kualitas plastik murahan, suara kresek-kresek, beda jauh sama yang asli.",
+      "helpful_count": 18,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "FAKE_SCAM",
+          "category_name": "Counterfeit / Authenticity",
+          "keyword": "barang kw"
+        }
+      ],
+      "defect_categories": "Counterfeit / Authenticity",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1084",
+      "platform": "Shopee",
+      "author_masked": "user_g***4",
+      "rating": 3,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-12",
+      "review_text": "Pengiriman lama banget seminggu lebih baru sampai. Busa telinga agak kekecilan dan bikin gerah setelah 1 jam pakai.",
+      "helpful_count": 10,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "kekecilan"
+        },
+        {
+          "category_id": "DELIVERY",
+          "category_name": "Delayed Logistics",
+          "keyword": "lama banget"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Delayed Logistics",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1088",
+      "platform": "Shopee",
+      "author_masked": "user_k***8",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-12",
+      "review_text": "Baterai drop parah! Baru dipakai 20 menit sudah mati, dicas 3 jam tidak nambah. Rusak cacat pabrik.",
+      "helpful_count": 34,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "cacat"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1089",
+      "platform": "Shopee",
+      "author_masked": "user_l***9",
+      "rating": 3,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-12",
+      "review_text": "Bluetooth sering disconnect kalau jarak lewat 3 meter. Mikrofon kurang jernih kalau dipakai telepon.",
+      "helpful_count": 8,
+      "has_media": false,
+      "defect_tags": [],
+      "defect_categories": "None",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1090",
+      "platform": "Shopee",
+      "author_masked": "user_m***0",
+      "rating": 1,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-11",
+      "review_text": "Barang mati total pas dicolok tidak menyala sama sekali! Tombol power patah. Sangat kecewa, minta retur dipersulit.",
+      "helpful_count": 24,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "patah"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1091",
+      "platform": "Shopee",
+      "author_masked": "user_n***1",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-11",
+      "review_text": "Packing hancur remuk di jalan, kardus sobek dan tanpa bubble wrap tebal! Produk lecet parah.",
+      "helpful_count": 19,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "PACKAGING",
+          "category_name": "Packaging & Handling",
+          "keyword": "remuk"
+        }
+      ],
+      "defect_categories": "Packaging & Handling",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1092",
+      "platform": "Shopee",
+      "author_masked": "user_o***2",
+      "rating": 2,
+      "variant_purchased": "Arctic Silver",
+      "review_date": "2026-09-11",
+      "review_text": "Pesan warna Arctic Silver dikasih Matte Black! Salah barang dan seller tidak mau tanggung jawab pas dikomplain di chat.",
+      "helpful_count": 14,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "salah barang"
+        },
+        {
+          "category_id": "SERVICE",
+          "category_name": "Seller Service",
+          "keyword": "tidak mau tanggung jawab"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Seller Service",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1093",
+      "platform": "Shopee",
+      "author_masked": "user_p***3",
+      "rating": 2,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-11",
+      "review_text": "Hati-hati barang kw bukan original! Kualitas plastik murahan, suara kresek-kresek, beda jauh sama yang asli.",
+      "helpful_count": 18,
+      "has_media": false,
+      "defect_tags": [
+        {
+          "category_id": "FAKE_SCAM",
+          "category_name": "Counterfeit / Authenticity",
+          "keyword": "barang kw"
+        }
+      ],
+      "defect_categories": "Counterfeit / Authenticity",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.4,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1094",
+      "platform": "Shopee",
+      "author_masked": "user_q***4",
+      "rating": 3,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-11",
+      "review_text": "Pengiriman lama banget seminggu lebih baru sampai. Busa telinga agak kekecilan dan bikin gerah setelah 1 jam pakai.",
+      "helpful_count": 10,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "WRONG_ITEM",
+          "category_name": "Inaccurate / Wrong Variant",
+          "keyword": "kekecilan"
+        },
+        {
+          "category_id": "DELIVERY",
+          "category_name": "Delayed Logistics",
+          "keyword": "lama banget"
+        }
+      ],
+      "defect_categories": "Inaccurate / Wrong Variant; Delayed Logistics",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1098",
+      "platform": "Shopee",
+      "author_masked": "user_u***8",
+      "rating": 1,
+      "variant_purchased": "Midnight Blue",
+      "review_date": "2026-09-11",
+      "review_text": "Baterai drop parah! Baru dipakai 20 menit sudah mati, dicas 3 jam tidak nambah. Rusak cacat pabrik.",
+      "helpful_count": 34,
+      "has_media": true,
+      "defect_tags": [
+        {
+          "category_id": "DEFECT_ITEM",
+          "category_name": "Item Broken / Defect",
+          "keyword": "cacat"
+        }
+      ],
+      "defect_categories": "Item Broken / Defect",
+      "sentiment_label": "Critical / Defect",
+      "sentiment_type": "critical",
+      "sentiment_score": 0.2,
+      "is_critical_defect": true
+    },
+    {
+      "review_id": "MOCK-SHO-1099",
+      "platform": "Shopee",
+      "author_masked": "user_v***9",
+      "rating": 3,
+      "variant_purchased": "Matte Black",
+      "review_date": "2026-09-11",
+      "review_text": "Bluetooth sering disconnect kalau jarak lewat 3 meter. Mikrofon kurang jernih kalau dipakai telepon.",
+      "helpful_count": 8,
+      "has_media": false,
+      "defect_tags": [],
+      "defect_categories": "None",
+      "sentiment_label": "Neutral / Mixed",
+      "sentiment_type": "neutral",
+      "sentiment_score": 0.5,
+      "is_critical_defect": true
+    }
+  ]
+}
